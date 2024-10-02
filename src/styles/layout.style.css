@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap");
 
 * {
     font-family: "Rubik Doodle Triangles", system-ui;
@@ -21,7 +21,7 @@ div {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200vh;
+    height: 400vh;
     z-index: 1;
     overflow: hidden;
 }
@@ -74,5 +74,11 @@ div {
     100% {
         transform: scale(0.3) rotate(0deg);
         opacity: 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+    #starshine {
+        height: 550vh;
     }
 }
