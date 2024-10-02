@@ -81,7 +81,7 @@ export const Home = () => {
               maxWidth: "100%",
             }}
           >
-            <motion.img src={"src/assets/three.png"} className="three" alt="" />
+            <motion.img src={"/src/assets/three.png"} className="three" alt="" />
             {View}
           </motion.div>
           <motion.h1
