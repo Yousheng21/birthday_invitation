@@ -46,14 +46,24 @@ img.three {
     width: 50%;
 }
 
+.silver {
+    width: 200px;
+    height: 200px;
+    background-image: url(/silver.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 200px;
+    margin-bottom: 2.5rem;
+}
+
 @media (min-width: 230px) and (max-width: 650px) {
     main {
         display: grid;
         grid-template-rows: auto repeat(3, auto);
         row-gap: 200px;
         height: 100%;
-        width: 160%;
-        padding: 200px 20px 50px 20px;
+        width: 165%;
+        padding: 150px 20px 100px 20px;
     }
     img.three {
         height: 300px;
@@ -63,10 +73,10 @@ img.three {
         margin-left: -10%;
     }
     h1 {
-        font-size: 58px;
+        font-size: 56px;
         text-shadow: 1px 1px 1px #c3c3c3;
         top: 0;
-        line-height: 64px;
+        line-height: 72px;
     }
     .ball {
         margin-left: -15%;
@@ -75,11 +85,10 @@ img.three {
         width: 72%;
         margin-top: 5%;
     }
-    .text-info{
+    .text-info {
         font-size: 36px;
         line-height: 40px;
     }
-    
 }
 
 @media (min-width: 325px) and (max-width: 375px) {
@@ -87,7 +96,6 @@ img.three {
         /* margin-left: -10%; */
     }
 }
-
 
 @media (min-width: 375px) and (max-width: 650px) {
     img.three {

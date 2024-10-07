@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
 
 * {
-    font-family: "Rubik Doodle Triangles", system-ui;
+    font-family: "Pattaya", system-ui;
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -10,21 +10,19 @@
 }
 
 .text-info {
-    font-family: "Pattaya", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     color: white;
     text-align: center;
 }
 
-h1.text2 {
-    font-family: "Pattaya", system-ui;
+.text-main {
+    font-family: "Rubik Doodle Triangles", system-ui;
     font-weight: 400;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+h1.shadow {
     text-shadow: 3px 3px 3px #c3c3c3;
 }
 
