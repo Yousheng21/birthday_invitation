@@ -80,7 +80,7 @@ export const Home = () => {
             }}
           >
             <motion.img
-              src={"/src/assets/three.png"}
+              src={"../assets/three.png"}
               className="three"
               alt=""
             />
