@@ -6,17 +6,14 @@ h1 {
     text-shadow: 3px 5px 3px #c3c3c3;
 }
 
-span {
-    text-shadow: 3px 5px 3px #c3c3c3;
-}
-
 main {
     display: grid;
     grid-template-rows: auto 80vh 100vh 90vh;
     row-gap: 100px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     padding: 30px 2vw;
+    background-image: url("../assets/stars-galaxy.gif");
 }
 
 section {
@@ -48,32 +45,68 @@ img.three {
     margin-left: -4%;
 }
 
-@media (min-width: 300px) and (max-width: 650px) {
+@media (min-width: 230px) and (max-width: 650px) {
     main {
         display: grid;
-        grid-template-rows: 100vh repeat(3, 1300px);
-        row-gap: 100px;
-        height: 100vh;
-        width: 150%;
-        padding: 50px 20px 20px 20px;
+        grid-template-rows: auto repeat(3, auto);
+        row-gap: 200px;
+        height: 100%;
+        width: 160%;
+        padding: 50px 20px 50px 20px;
     }
     img.three {
-        height: 340px;
+        height: 300px;
         width: 80%;
-        margin-top: 0%;
+        margin-top: 5%;
         margin-right: -20%;
         margin-left: -10%;
     }
     h1 {
-        font-size: 64px;
+        font-size: 56px;
         text-shadow: 1px 1px 1px #c3c3c3;
         top: 0;
-        line-height: 72px;
+        line-height: 64px;
     }
     .ball {
         margin-left: -5%;
         height: 340px;
+        max-height: 340px;
         width: 70%;
     }
+    .text-info{
+        font-size: 36px;
+        line-height: 40px;
+    }
     
+}
+
+@media (min-width: 325px) and (max-width: 375px) {
+    .ball {
+        margin-left: -10%;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 650px) {
+    img.three {
+        height: 350px;
+        margin-top: 0%;
+    }
+    .ball {
+        height: 340px;
+        margin-left: -10%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 630px) {
+    img.three {
+        height: 370px;
+        margin-top: -3%;
+    }
+    .ball {
+        height: 320px;
+    }
+    h1 {
+        font-size: 64px;
+    }
 }

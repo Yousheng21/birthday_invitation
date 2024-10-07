@@ -1,5 +1,5 @@
-import { motion, type Variants } from "framer-motion";
-import React from "react";
+import { motion, type ForwardRefComponent, type HTMLMotionProps, type MotionProps, type Variants } from "framer-motion";
+import React, { type HTMLAttributes } from "react";
 
 const cardVariants: Variants = {
   offscreen: {
@@ -13,7 +13,11 @@ const cardVariants: Variants = {
   },
 };
 
-export const Section = (props: { children: React.ReactNode }) => {
+interface IProps extends MotionProps {
+  children: React.ReactNode
+}
+
+export const Section = (props: IProps) => {
   return (
     <motion.section
       initial="offscreen"
@@ -21,6 +25,7 @@ export const Section = (props: { children: React.ReactNode }) => {
       viewport={{ once: true, amount: 0.5 }}
       variants={cardVariants}
       className="invitation"
+      {...props}
     >
       {props.children}
     </motion.section>

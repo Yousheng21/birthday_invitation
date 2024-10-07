@@ -11,5 +11,7 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   integrations: [react(), tailwind()],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel({
+    includeFiles: ['./src/styles/layout.style.css', "./src/assets/three.png"],
+  })
 });

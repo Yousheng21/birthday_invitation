@@ -1,7 +1,7 @@
 var body = document.getElementById("starshine"),
   template = document.getElementsByClassName("template shine")[0],
   stars = 300,
-  sparkle = 5;
+  sparkle = 3;
 
 var size = "small";
 var createStar = function () {

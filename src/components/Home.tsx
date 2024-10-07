@@ -55,14 +55,14 @@ export const Home = () => {
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />
       <main>
-        <Section>
+        <Section style={{ display: "flex", flexDirection: "column", gap: 50, justifyContent: "start" }}>
           <motion.h1
             variants={{
               hidden: { opacity: 0, y: -20 },
               visible,
             }}
           >
-            Приглашаю <br /> на свой блестящий <br /> ЮБИЛЕЙ
+            Приглашаю <br /> на блестящую вечеринку <br /> "Блести&Сияй"
           </motion.h1>
 
           <motion.div
@@ -73,15 +73,17 @@ export const Home = () => {
               hidden: { opacity: 0, y: -20 },
               visible,
             }}
-            className="mobile:mt-10 mobile:mb-10"
+            className="flex justify-center -mt-5"
             style={{
-              display: "flex",
-              justifyContent: "center",
               maxHeight: "40%",
               maxWidth: "100%",
             }}
           >
-            <motion.img src={"/src/assets/three.png"} className="three" alt="" />
+            <motion.img
+              src={"/src/assets/three.png"}
+              className="three"
+              alt=""
+            />
             {View}
           </motion.div>
           <motion.h1
@@ -106,33 +108,38 @@ export const Home = () => {
           <div className="flex tablet:flex-row mobile:flex-col gap-1">
             <div className="flex flex-col">
               {svg("black")}
-              <span className="text-5xl text-center" style={{ color: "white" }}>
-                Черный
-              </span>
+              <span className="text-5xl text-info">Черный</span>
             </div>
             <div className="flex flex-col">
               {svg("white")}
-              <span className="text-5xl text-center" style={{ color: "white" }}>
-                Белый
-              </span>
+              <span className="text-5xl text-info">Белый</span>
             </div>
             <div className="flex flex-col">
               {svg("grey")}
-              <span className="text-5xl text-center" style={{ color: "white" }}>
-                Серый
-              </span>
+              <span className="text-5xl text-info">Серый</span>
             </div>
             <div className="flex flex-col">
               {svg("silver")}
-              <span className="text-5xl text-center" style={{ color: "white" }}>
-                Серебристый
-              </span>
+              <span className="text-5xl text-info">Серебристый</span>
             </div>
           </div>
         </Section>
 
         <Section>
-          <h1>Текст</h1>
+          <h1>Дорогие мои!</h1>
+          <br />
+          <p className="text-5xl text-info">
+            С радостью приглашаю вас отпраздновать мое блестящее 30-летие! Этот
+            важный момент мы отметим в блеске! Мы погрузимся в мир веселья,
+            зажигательной музыки и незабываемой атмосферы в стиле блестящего
+            диско! Будем танцевать под сверкающие огни и наслаждаться друг
+            другом! Это мероприятие, которое вы не сможете пропустить, -
+            взрослая блестящая вечеринка не для детских глаз. <br /><br /> <i className="font-sans underline">Дресс-код:</i>  белый,
+            серый, черный и серебро – пусть ваш наряд сияет так же ярко, как
+            диско-шар! <br />
+            <br /> С нетерпением жду вас на своем празднике! <br /> С любовью,
+            Натали🖤
+          </p>
         </Section>
       </main>
     </>
