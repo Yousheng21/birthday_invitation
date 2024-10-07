@@ -3,7 +3,7 @@ h1 {
     font-size: 72px;
     text-align: center;
     color: #ffffff;
-    text-shadow: 3px 5px 3px #c3c3c3;
+    text-shadow: 3px 3px 3px #c3c3c3;
 }
 
 main {
@@ -26,9 +26,8 @@ section {
 
 img.three {
     margin-right: -15%;
-    margin-top: 2%;
     height: 550px;
-    width: 45%;
+    width: 50%;
 }
 
 .progress-bar {
@@ -42,7 +41,9 @@ img.three {
 }
 
 .ball {
-    margin-left: -4%;
+    margin-left: -9%;
+    margin-top: 2%;
+    width: 50%;
 }
 
 @media (min-width: 230px) and (max-width: 650px) {
@@ -52,26 +53,27 @@ img.three {
         row-gap: 200px;
         height: 100%;
         width: 160%;
-        padding: 50px 20px 50px 20px;
+        padding: 200px 20px 50px 20px;
     }
     img.three {
         height: 300px;
-        width: 80%;
-        margin-top: 5%;
+        width: 78%;
+        margin-top: 0;
         margin-right: -20%;
         margin-left: -10%;
     }
     h1 {
-        font-size: 56px;
+        font-size: 58px;
         text-shadow: 1px 1px 1px #c3c3c3;
         top: 0;
         line-height: 64px;
     }
     .ball {
-        margin-left: -5%;
+        margin-left: -15%;
         height: 340px;
         max-height: 340px;
-        width: 70%;
+        width: 72%;
+        margin-top: 5%;
     }
     .text-info{
         font-size: 36px;
@@ -82,7 +84,7 @@ img.three {
 
 @media (min-width: 325px) and (max-width: 375px) {
     .ball {
-        margin-left: -10%;
+        /* margin-left: -10%; */
     }
 }
 
@@ -90,21 +92,24 @@ img.three {
 @media (min-width: 375px) and (max-width: 650px) {
     img.three {
         height: 350px;
-        margin-top: 0%;
+        /* margin-top: 0%; */
     }
     .ball {
-        height: 340px;
-        margin-left: -10%;
+        /* height: 340px; */
+        /* margin-left: -10%; */
+        margin-top: 10%;
     }
 }
 
 @media (min-width: 425px) and (max-width: 630px) {
     img.three {
         height: 370px;
-        margin-top: -3%;
+        /* margin-top: -3%; */
     }
     .ball {
-        height: 320px;
+        margin-top: 13%;
+        margin-left: -17%;
+        /* height: 320px; */
     }
     h1 {
         font-size: 64px;
