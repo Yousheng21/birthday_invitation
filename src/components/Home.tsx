@@ -59,7 +59,8 @@ export const Home = () => {
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: 50,
+            gap: 65,
+            marginBottom: 100
           }}
         >
           <motion.h1
@@ -68,8 +69,17 @@ export const Home = () => {
               visible,
             }}
           >
-            <span style={{fontSize: 86}}>Приглашаю</span><br /> на блестящую вечеринку <br />{" "}
-            <span className="text-main text-wrap mt-10" style={{fontSize: 58}}>"Блести&Сияй"</span>
+            <span className="min-[300px]:text-7xl min-[350px]:text-8xl">
+              Приглашаю
+            </span>
+            <br />{" "}
+            <span className="min-[300px]:text-6xl min-[350px]:text-7xl">
+              на блестящую вечеринку
+            </span>
+            <br />
+            <h1 className="text-main mt-10 text-wrap  min-[320px]:text-6xl min-[375px]:text-7xl">
+              "Блести&Сияй"
+            </h1>
           </motion.h1>
 
           <motion.div
@@ -91,7 +101,7 @@ export const Home = () => {
               visible,
             }}
             className="mobile:pt-5 tablet:pt-0"
-            style={{fontSize: 72}}
+            style={{ fontSize: 72 }}
           >
             8 ноября 2024
           </motion.h1>
@@ -105,11 +115,12 @@ export const Home = () => {
         </Section>
 
         <Section>
-          <h1 className="shadow">Дорогие мои!</h1>
+          <h1 className="shadow pb-5">Дорогие мои!</h1>
           <br />
           <p className="text-5xl text-info">
-            С радостью приглашаю вас отпраздновать мое блестящее <br /> <span className="text-main text-5xl"> тридцатилетие!</span> <br /> Этот
-            важный момент мы отметим в блеске! <br />
+            С радостью приглашаю вас отпраздновать мое блестящее <br />{" "}
+            <span className="text-main text-5xl"> тридцатилетие!</span> <br />{" "}
+            Этот важный момент мы отметим в блеске! <br />
             <br /> Мы погрузимся в мир веселья, зажигательной музыки и
             незабываемой атмосферы в стиле блестящего диско! Будем танцевать под
             сверкающие огни и наслаждаться друг другом! <br />
@@ -137,13 +148,23 @@ export const Home = () => {
               {svg("grey")}
               <span className="text-5xl text-info">Серый</span>
             </div>
-            <div className="flex flex-col items-center mt-10">
+            <div className="flex flex-col items-center mt-16">
               <div className="silver" />
 
               <span className="text-5xl text-info">Серебристый</span>
             </div>
           </div>
         </Section>
+        <div
+          style={{
+            backgroundImage: "url('/dance.gif')",
+            width: "100%",
+            height: 600,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            marginTop: "-10%",
+          }}
+        ></div>
       </main>
     </>
   );

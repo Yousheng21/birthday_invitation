@@ -60,10 +60,10 @@ img.three {
     main {
         display: grid;
         grid-template-rows: auto repeat(3, auto);
-        row-gap: 200px;
+        row-gap: 100px;
         height: 100%;
         width: 165%;
-        padding: 150px 20px 100px 20px;
+        padding: 80px 20px 100px 20px;
     }
     img.three {
         height: 300px;
