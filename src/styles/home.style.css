@@ -8,8 +8,8 @@ h1 {
 
 main {
     display: grid;
-    grid-template-rows: auto 80vh 100vh 90vh;
-    row-gap: 100px;
+    grid-template-rows: auto repeat(3,auto);
+    row-gap: 150px;
     height: 100%;
     width: 100%;
     padding: 30px 2vw;
