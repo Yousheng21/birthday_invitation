@@ -30,6 +30,7 @@ body {
     padding: 0;
     margin: 0;
     background-image: url("./stars-galaxy.gif");
+    overflow-x: hidden;
 }
 div {
     box-sizing: border-box;
