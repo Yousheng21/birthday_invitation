@@ -99,6 +99,6 @@ div {
 @media (min-width: 300px) and (max-width: 425px) {
     #starshine {
         width: 160%;
-        height: 500%;
+        height: 400%;
     }
 }

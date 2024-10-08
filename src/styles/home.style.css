@@ -1,5 +1,4 @@
 h1 {
-    top: -18vw;
     font-size: 72px;
     text-align: center;
     color: #ffffff;
@@ -8,7 +7,7 @@ h1 {
 
 main {
     display: grid;
-    grid-template-rows: auto repeat(3,auto);
+    grid-template-rows: auto repeat(3, auto);
     row-gap: 150px;
     height: 100%;
     width: 100%;
@@ -91,20 +90,11 @@ img.three {
     }
 }
 
-@media (min-width: 325px) and (max-width: 375px) {
-    .ball {
-        /* margin-left: -10%; */
-    }
-}
-
 @media (min-width: 375px) and (max-width: 650px) {
     img.three {
         height: 350px;
-        /* margin-top: 0%; */
     }
     .ball {
-        /* height: 340px; */
-        /* margin-left: -10%; */
         margin-top: 10%;
     }
 }
@@ -112,12 +102,10 @@ img.three {
 @media (min-width: 425px) and (max-width: 630px) {
     img.three {
         height: 370px;
-        /* margin-top: -3%; */
     }
     .ball {
         margin-top: 13%;
         margin-left: -17%;
-        /* height: 320px; */
     }
     h1 {
         font-size: 64px;

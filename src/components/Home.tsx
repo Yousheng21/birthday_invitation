@@ -9,9 +9,6 @@ import { Section } from "./Section";
 const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
 
 export const Home = () => {
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
-
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -60,7 +57,7 @@ export const Home = () => {
             display: "flex",
             flexDirection: "column",
             gap: 65,
-            marginBottom: 100
+            marginBottom: 100,
           }}
         >
           <motion.h1
@@ -150,21 +147,10 @@ export const Home = () => {
             </div>
             <div className="flex flex-col items-center mt-16">
               <div className="silver" />
-
               <span className="text-5xl text-info">Серебристый</span>
             </div>
           </div>
         </Section>
-        <div
-          style={{
-            backgroundImage: "url('/dance.gif')",
-            width: "100%",
-            height: 600,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            marginTop: "-10%",
-          }}
-        ></div>
       </main>
     </>
   );
