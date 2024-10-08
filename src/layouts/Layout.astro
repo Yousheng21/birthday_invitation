@@ -19,8 +19,9 @@
     <script>
       window.addEventListener("DOMContentLoaded", (event) => {
         const audio = document.querySelector("audio");
+        if (!audio) return;
         audio.volume = 0.2;
-        setTimeout(() => audio.play(), 3000);
+        setTimeout(() => audio?.play(), 3000);
       });
     </script>
   </body>
